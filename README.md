@@ -8,7 +8,14 @@ You can customize your iframe by adding certain query parameters to the source U
 
 ## Iframe
 
-  
+```
+<script>
+    iFrameResize({
+        scrolling: false,       --> true / false
+        log: false              --> true / false
+    }, "sws_iframe");
+</script>
+```
 
 With the Iframe-View of our page, only the cards and the footer are displayed.
 Its recommended to always use this setting when implementing our page over a iframe.
@@ -20,6 +27,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true"></iframe>
 
@@ -46,6 +59,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?footer=false"></iframe>
 
@@ -84,6 +103,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?detach=true"></iframe>
 
@@ -116,6 +141,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?id=5f451ae6c669b00010ca436b"></iframe>
 
@@ -140,6 +171,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?id=5f451ae6c669b00010ca436b-5f45059b6185c8001149c8e7"></iframe>
 
@@ -167,6 +204,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?type=pmr"></iframe>
 
@@ -197,6 +240,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?categories=DokuDemo"></iframe>
 
@@ -224,6 +273,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?categories=DokuDemo-AnotherOne"></iframe>
 
@@ -252,6 +307,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?categories=AnotherOne&id=5f451a83c669b00010ca436a"></iframe>
 
@@ -281,6 +342,12 @@ Example:
 ```
 
 <div>
+<script>
+    iFrameResize({
+        scrolling: false,
+        log: false
+    }, "sws_iframe");
+</script>
 
 <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&detach=true&id=5f451ae6c669b00010ca436b"></iframe>
 
@@ -292,10 +359,18 @@ Example:
 
 Click here to view our demo: [Demo](https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&detach=true&id=5f451ae6c669b00010ca436b)
 
-  
 
-# iFrame-Reziser
+# iFrame Auto Resizing
+## SWS Resizer is used from version 3.1.1
+
+## iFrame-Reziser is used until Version 3.1.0
 We are using Iframe Resizer for this Project
 
 Copyright © 2013-20 David J. Bradshaw. Licensed under the MIT License.
 To see the Documentation click the follwoing Link: [Iframe-Resizer](https://github.com/davidjbradshaw/iframe-resizer/blob/master/README.md)
+
+## How to include the iframe-resizer?
+```
+Please use your Source https://<<INSTANZ>>.<<DOMAIN>>.<<END>>/api/iframe.js
+<script src="https://swsdemo.parteiverkehr.de/api/iframe.js"></script>
+```
