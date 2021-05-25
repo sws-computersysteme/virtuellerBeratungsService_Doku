@@ -10,31 +10,17 @@
 <body style='background-color: lightblue'>
 <div id="sws_div">
     <script>
-        $(function(){
-        $('#sws_div').append('<iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&categories=SWS&detach=true"></iframe>');
-        
-        // Until version 3.1.0
-        $("#sws_iframe").css("width","100%").css('border','none');
+            $(function(){
+            $('#sws_div').append('<iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&categories=SWS&detach=true"></iframe>');
 
-        iFrameResize({ 
+            // From version 3.1.1
+            $("#sws_iframe").css("width","1px").css("min-width","100%").css('border','none');
+            
+            iFrameResize({
                 log: false,
-                autoResize: true,
-                checkOrigin: false,
-                heightCalculationMethod: 'bodyScroll',
-                contentWindowBodyMargin: 0,
-                sizeWidth: false,
-                scrolling: false,
-                interval: 33
+                scrolling: false
             }, '#sws_iframe');
-        })    
-
-        // From version 3.1.1
-        $("#sws_iframe").css("width","1px").css("min-width","100%").css('border','none');
-        
-        iFrameResize({
-            log: false,
-            scrolling: false
-        }, '#sws_iframe')
+        });
     </script>
 </div>
     <!--<iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&categories=SWS"></iframe>-->

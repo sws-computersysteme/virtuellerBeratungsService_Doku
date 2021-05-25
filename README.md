@@ -242,14 +242,7 @@ Click here to view our demo: [Demo](https://swsdemo.parteiverkehr.de/?iframe=tru
 
 # iFrame Auto Resizing
 ## SWS Resizer is used from version 3.1.1
-
-## iFrame-Reziser is used until Version 3.1.0
-We are using Iframe Resizer for this Project
-
-Copyright © 2013-20 David J. Bradshaw. Licensed under the MIT License.
-To see the Documentation click the follwoing Link: [Iframe-Resizer](https://github.com/davidjbradshaw/iframe-resizer/blob/master/README.md)
-
-## How to include the iframe-resizer?
+### How to include the iframe-resizer?
 ```
 Please use your Source https://<<INSTANZ>>.<<DOMAIN>>.<<END>>/api/iframe.js
 <script src="https://swsdemo.parteiverkehr.de/api/iframe.js"></script>
