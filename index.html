@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testeite</title>
+    <title>Testseite</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://swsdemo.parteiverkehr.de/api/iframe.js"></script>
 </head>
 <body style='background-color: lightblue'>
-<div id="sws_div">
-    <script>
-            $(function(){
-            $('#sws_div').append('<iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&categories=SWS&detach=true"></iframe>');
 
+    <script>
+            $(function(){            
             // From version 3.1.1
-            $("#sws_iframe").css("width","1px").css("min-width","100%").css('border','none');
+            $("#sws_iframe").css("width","100%").css('border','none');
             
             iFrameResize({
                 log: false,
@@ -22,7 +20,7 @@
             }, '#sws_iframe');
         });
     </script>
-</div>
-    <!--<iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&categories=SWS"></iframe>-->
+
+    <iframe id="sws_iframe" src="https://swsdemo.parteiverkehr.de/?iframe=true&footer=false&categories=SWS"></iframe>
 </body>
 </html>
